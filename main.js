@@ -40,7 +40,7 @@ if (contactSection && homeLink && contactLink) {
 const typedEl = document.getElementById('typed');
 if (typedEl) {
   const phrases = [
-    'Maker, tinkerer, biotech by day.',
+    'Maker, tinkerer, always mid-project.',
     'Building tools, gadgets, and things I couldn\'t find for sale.',
     'At the bench, in the water, or somewhere in between.'
   ];
