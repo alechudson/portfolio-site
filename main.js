@@ -14,6 +14,24 @@ if (progressEl) {
   });
 }
 
+const contactSection = document.getElementById('contact');
+const homeLink = document.querySelector('nav .links a[href="index.html"], nav .links a[href="#"]');
+const contactLink = document.querySelector('nav .links a[href="#contact"]');
+if (contactSection && homeLink && contactLink) {
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        homeLink.classList.remove('active');
+        contactLink.classList.add('active');
+      } else {
+        contactLink.classList.remove('active');
+        homeLink.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -40% 0px' });
+  spy.observe(contactSection);
+}
+
 const typedEl = document.getElementById('typed');
 if (typedEl) {
   const phrases = [
