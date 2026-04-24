@@ -1,139 +1,149 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700&display=swap" rel="stylesheet">
-
-
-	<title>Alec Hudson | Projects</title>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <meta name="description" content="A collection of projects: electronics, woodwork, and other things I'd rather make than buy.">
+  <meta property="og:title" content="Alec Hudson | Projects">
+  <meta property="og:description" content="A collection of projects: electronics, woodwork, and other things I'd rather make than buy.">
+  <meta property="og:type" content="website">
+  <title>Alec Hudson | Projects</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h2 class="page-heading">Projects</h2>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-        <div class="projects">
+  <header>
+    <nav>
+      <div class="inner">
+        <a href="index.html" class="logo">Alec Hudson</a>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project1.jpeg" alt="picture of project 1">
-                <h3>Soap Dispenser</h3>
-                <p>Soap Dispenser With a Twist</p>
-                </a>
-            </section>
+  <main>
+    <section style="padding-top: 120px;">
+      <div class="fade-in">
+        <p class="section-label">Projects</p>
+        <h2>My Work</h2>
+      </div>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project2.png" alt="picture of project 2">
-                <h3>Coffee Grinder Lid</h3>
-                <p>Electric Hand Coffee Grinder</p>
-                </a>
-            </section>
+      <div class="projects-grid">
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project3.jpeg" alt="picture of project 3">
-                <h3>Pool RTD Thermometer</h3>
-                <p>Precise Waterproof Thermometer</p>
-                </a>
-            </section>
+        <a href="project1.html" class="project-card fade-in stagger-1">
+          <img src="images/project1.jpeg" alt="Soap Dispenser">
+          <div class="card-body">
+            <h3>Soap Dispenser</h3>
+            <p>Soap Dispenser With a Twist</p>
+          </div>
+        </a>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project4.jpg" alt="picture of project 4">
-                <h3>Mini Arcade</h3>
-                <p>RPI Powered Classic Emulator</p>
-                </a>
-            </section>
+        <a href="project2.html" class="project-card fade-in stagger-2">
+          <img src="images/project2.png" alt="Coffee Grinder Lid">
+          <div class="card-body">
+            <h3>Coffee Grinder Lid</h3>
+            <p>Electric Hand Coffee Grinder</p>
+          </div>
+        </a>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project5.png" alt="picture of project 5">
-                <h3>Watch Bezel Remover</h3>
-                <p>Simple Tool to Remove Watch Bezels</p>
-                </a>
-            </section>
+        <a href="project3.html" class="project-card fade-in stagger-3">
+          <img src="images/project3.jpeg" alt="Pool RTD Thermometer">
+          <div class="card-body">
+            <h3>Pool RTD Thermometer</h3>
+            <p>Precise Waterproof Thermometer</p>
+          </div>
+        </a>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project6.jpg" alt="picture of project 6">
-                <h3>ws2812b Pace Clock</h3>
-                <p>Pace Clock With Real Time Clock</p>
-                </a>
-            </section>
-    
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project7.jpg" alt="picture of project 7">
-                <h3>Car Battery Jumper</h3>
-                <p>Battery to Jump Cars & Power Things</p>
-                </a>
-            </section>
-    
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project8.jpg" alt="picture of project 8">
-                <h3>Knife Scale</h3>
-                <p>Custom Knife Scale for Pilar</p>
-                </a>
-             </section>
-    
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project9.jpg" alt="picture of project 9">
-                <h3>Rugged Portable Charger</h3>
-                <p>Rugged Solar Portable Charger</p>
-                </a>
-            </section>
-    
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project10.jpg" alt="picture of project 10">
-                <h3>Bike Tail Light</h3>
-                <p>Blinking Light for Safety</p>
-                </a>
-            </section>
+        <a href="project4.html" class="project-card fade-in stagger-4">
+          <img src="images/project4.jpg" alt="Mini Arcade">
+          <div class="card-body">
+            <h3>Mini Arcade</h3>
+            <p>RPI Powered Classic Emulator</p>
+          </div>
+        </a>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project11.jpg" alt="picture of project 11">
-                <h3>Screwdriver Handle</h3>
-                <p>Custom Screwdriver Handle</p>
-                </a>
-            </section>
+        <a href="project5.html" class="project-card fade-in stagger-5">
+          <img src="images/project5.png" alt="Watch Bezel Remover">
+          <div class="card-body">
+            <h3>Watch Bezel Remover</h3>
+            <p>Simple Tool to Remove Watch Bezels</p>
+          </div>
+        </a>
 
-            <section class="project">
-                <a href="project1.html">
-                    <img src="images/project12.jpg" alt="picture of project 12">
-                <h3>Cold Brew v2</h3>
-                <p>New Way of Making Cold Brew</p>
-                </a>
-            </section>
+        <a href="project6.html" class="project-card fade-in stagger-6">
+          <img src="images/project6.jpg" alt="ws2812b Pace Clock">
+          <div class="card-body">
+            <h3>ws2812b Pace Clock</h3>
+            <p>Pace Clock With Real Time Clock</p>
+          </div>
+        </a>
 
-         </div>
+        <a href="project7.html" class="project-card fade-in stagger-1">
+          <img loading="lazy" src="images/project7.jpg" alt="Car Battery Jumper">
+          <div class="card-body">
+            <h3>Car Battery Jumper</h3>
+            <p>Battery to Jump Cars & Power Things</p>
+          </div>
+        </a>
 
-    </main>
+        <a href="project8.html" class="project-card fade-in stagger-2">
+          <img loading="lazy" src="images/project8.jpg" alt="Knife Scale">
+          <div class="card-body">
+            <h3>Knife Scale</h3>
+            <p>Custom Knife Scale for Pilar</p>
+          </div>
+        </a>
+
+        <a href="project9.html" class="project-card fade-in stagger-3">
+          <img loading="lazy" src="images/project9.jpg" alt="Rugged Portable Charger">
+          <div class="card-body">
+            <h3>Rugged Portable Charger</h3>
+            <p>Rugged Solar Portable Charger</p>
+          </div>
+        </a>
+
+        <a href="project10.html" class="project-card fade-in stagger-4">
+          <img loading="lazy" src="images/project10.jpg" alt="Bike Tail Light">
+          <div class="card-body">
+            <h3>Bike Tail Light</h3>
+            <p>Blinking Light for Safety</p>
+          </div>
+        </a>
+
+        <a href="project11.html" class="project-card fade-in stagger-5">
+          <img loading="lazy" src="images/project11.jpg" alt="Screwdriver Handle">
+          <div class="card-body">
+            <h3>Screwdriver Handle</h3>
+            <p>Custom Screwdriver Handle</p>
+          </div>
+        </a>
+
+        <a href="project12.html" class="project-card fade-in stagger-6">
+          <img loading="lazy" src="images/project12.jpg" alt="Cold Brew v2">
+          <div class="card-body">
+            <h3>Cold Brew v2</h3>
+            <p>New Way of Making Cold Brew</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">&copy; Alec Hudson</div>
+  </footer>
+
+  <script src="main.js" defer></script>
 
 </body>
-
-<footer>
-    <p>© Alec Hudson</p>
-</footer>
-
 </html>

@@ -1,54 +1,105 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700&display=swap" rel="stylesheet">
-
-
-	<title>Alec Hudson Portfolio</title>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <meta name="description" content="Maker, tinkerer, biotech by day. Building tools, gadgets, and things I couldn't find for sale.">
+  <meta property="og:title" content="Alec Hudson">
+  <meta property="og:description" content="Maker, tinkerer, biotech by day. Building tools, gadgets, and things I couldn't find for sale.">
+  <meta property="og:type" content="website">
+  <title>Alec Hudson</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-        <section class="hero">
-            <h1>Alec Hudson</h1>
-            <p>Portfolio Site</p>
-        </section>
+  <header>
+    <nav>
+      <div class="inner">
+        <a href="index.html" class="logo">Alec Hudson</a>
+        <ul class="links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <section class="about">
-            <div>    
-                <img src="images/alecprofile.jpg" alt="Photo of Alec">
-            </div>
-            <div>
-                <h2>About Me</h2>
-                <p>I am currently 21 years old and am working as a coach at Sailfish Swim Team in Round Rock, Texas. This is my fourth year coaching and it has been nothing short of incredible, both in terms of the people I have been able to work with and the things I have  been able to learn along the way. When I am not on deck you can usually find me working with electronics or trying to figure out how to bring my next project to life.
-                </p>
-            </div>
-        </section>
+  <main>
 
-    </main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="fade-in">
+        <p class="label">Hello, I'm</p>
+        <h1>Alec Hudson<span class="gradient">.</span></h1>
+        <p class="subtitle"><span id="typed"></span><span class="typing-cursor"></span></p>
+        <div class="btn-group">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>© Alec Hudson</p>
-    </footer>
+    <section id="about">
+      <div class="fade-in">
+        <p class="section-label">About</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-section fade-in">
+        <img src="images/alecprofile.jpg" alt="Photo of Alec">
+        <div>
+          <p>I'm Alec. I grew up in Austin and Round Rock, swimming since 2005 and taking apart anything I could get my hands on. Both stuck. The pool taught me that the best part of any of it is the people you do it with. The workbench taught me how good it feels to make the thing yourself.</p>
+          <p>These days I work in biotech, where the details matter and getting them right is most of the job. Outside of work, I'm usually mid project, building the things I wish someone else had already made. A little electronics, a little woodwork, mostly things I'd rather make than buy.</p>
+          <p>This site is where I'm logging most of it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="fade-in">
+        <p class="section-label">Contact</p>
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">For any questions please fill out the form below and I will be in touch shortly.</p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="fade-in">
+        <input type="hidden" name="access_key" value="3cb019fa-75ea-4257-938b-b546f3200a5d">
+        <input type="hidden" name="redirect" value="https://alechudson.github.io/portfolio-site/">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="your-name">Name</label>
+            <input type="text" name="name" id="your-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="_replyto" id="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" maxlength="14">
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="inner">&copy; Alec Hudson</div>
+  </footer>
+
+  <script src="main.js" defer></script>
 
 </body>
-
 </html>

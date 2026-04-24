@@ -1,55 +1,71 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans+Condensed:700&display=swap" rel="stylesheet">
-
-
-	<title>Alec Hudson | Project 1</title>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <meta name="description" content="Project by Alec Hudson — The Counting Soap Dispenser">
+  <meta property="og:title" content="Alec Hudson | The Counting Soap Dispenser">
+  <meta property="og:description" content="Project by Alec Hudson — The Counting Soap Dispenser">
+  <meta property="og:type" content="website">
+  <title>Alec Hudson | The Counting Soap Dispenser</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-            <h2 class="page-heading">Project #1</h2>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-            <section class="project-page">
-                <div>
-                    <img src="images/project1.jpeg" alt="soap dispenser">
-                </div>
-                <h2>The Counting Soap Dispenser</h2>
-                <h3>Wait What?</h3>
-                <p>This project is the result of a persuasive design project I was assigned in an interaction design class. The goal was to design something that would help influence people's decisions for the better. As I am sure many of us are aware, the problem of people washing their hands in the bathroom is one that has gone on for far too long. That is where the counting and clapping soap dispenser comes in! Not only will it count how many people use soap, but it will also clap for anyone who chooses to use it.</p>
-                
-                <div>
-                    <img src="images/model 2.gif" alt="3d model">
-                </div>
-                <h3>How It Was Made</h3>
-                <p>The process began with making sure this was feasible. I made a simple prototype on some breadboards which worked without a hitch and it was off to choosing the right soap dispenser! I was looking for one that looked good and would be fairly easy to modify. Once I had chosen a soap dispenser and had it in my hands I scanned the lid on a photoscanner and the modeling began.</p>
-            </section>
+  <header>
+    <nav>
+      <div class="inner">
+        <a href="index.html" class="logo">Alec Hudson</a>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    </main>
+  <main>
+    <div class="project-detail">
+      <div class="fade-in">
+        <a href="projects.html" class="back-link">&larr; Back to Projects</a>
+        <h1>The Counting Soap Dispenser</h1>
+      </div>
 
+      <div class="fade-in">
+        <img src="images/project1.jpeg" alt="Soap Dispenser">
+      </div>
+
+      <div class="fade-in">
+        <h2>Wait What?</h2>
+        <p>This project is the result of a persuasive design project I was assigned in an interaction design class. The goal was to design something that would help influence people's decisions for the better. As I am sure many of us are aware, the problem of people washing their hands in the bathroom is one that has gone on for far too long. That is where the counting and clapping soap dispenser comes in! Not only will it count how many people use soap, but it will also clap for anyone who chooses to use it.</p>
+      </div>
+
+      <div class="fade-in">
+        <img src="images/model-2.gif" alt="3D model animation">
+      </div>
+
+      <div class="fade-in">
+        <img src="images/project1-image2.jpeg" alt="Counting soap dispenser detail" loading="lazy">
+      </div>
+
+      <div class="fade-in">
+        <h2>How It Was Made</h2>
+        <p>The process began with making sure this was feasible. I made a simple prototype on some breadboards which worked without a hitch and it was off to choosing the right soap dispenser! I was looking for one that looked good and would be fairly easy to modify. Once I had chosen a soap dispenser and had it in my hands I scanned the lid on a photoscanner and the modeling began.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="inner">&copy; Alec Hudson</div>
+  </footer>
+
+  <script src="main.js" defer></script>
 
 </body>
-
-<footer>
-    <p>© Alec Hudson</p>
-</footer>
-
 </html>
