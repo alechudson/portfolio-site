@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/jetbrains-mono/jetbrains-mono.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/space-grotesk/space-grotesk-700.woff2">
   <meta name="description" content="A collection of projects: electronics, woodwork, and other things I'd rather make than buy.">
   <meta property="og:title" content="Alec Hudson | Projects">
   <meta property="og:description" content="A collection of projects: electronics, woodwork, and other things I'd rather make than buy.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://alechudson.github.io/portfolio-site/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Alec Hudson | Projects</title>
 </head>
 
@@ -38,109 +42,131 @@
         <h2>My Work</h2>
       </div>
 
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="electronics">Electronics</button>
+        <button class="filter-btn" data-filter="3d-print">3D Print</button>
+        <button class="filter-btn" data-filter="cnc">CNC</button>
+        <button class="filter-btn" data-filter="swimming">Swimming</button>
+        <span class="filter-count">13 projects</span>
+      </div>
+
       <div class="projects-grid">
 
-        <a href="project13.html" class="project-card fade-in stagger-1">
+        <a href="project13.html" class="project-card fade-in stagger-1" data-tags="cnc 3d-print">
           <img loading="lazy" src="images/keychain-hero.jpg" alt="Keychain">
           <div class="card-body">
             <h3>Keychain</h3>
             <p>Custom Made Keychain</p>
+            <div class="card-tags"><span>CNC</span><span>3D Print</span></div>
           </div>
         </a>
 
-        <a href="project1.html" class="project-card fade-in stagger-1">
-          <img src="images/project1.jpeg" alt="Soap Dispenser">
+        <a href="project1.html" class="project-card fade-in stagger-1" data-tags="electronics 3d-print">
+          <img loading="lazy" src="images/project1.jpeg" alt="Soap Dispenser">
           <div class="card-body">
             <h3>Soap Dispenser</h3>
             <p>Soap Dispenser With a Twist</p>
+            <div class="card-tags"><span>Electronics</span><span>3D Print</span></div>
           </div>
         </a>
 
-        <a href="project2.html" class="project-card fade-in stagger-2">
-          <img src="images/project2.png" alt="Coffee Grinder Lid">
+        <a href="project2.html" class="project-card fade-in stagger-2" data-tags="3d-print">
+          <img loading="lazy" src="images/project2.png" alt="Coffee Grinder Lid">
           <div class="card-body">
             <h3>Coffee Grinder Lid</h3>
             <p>Electric Hand Coffee Grinder</p>
+            <div class="card-tags"><span>3D Print</span></div>
           </div>
         </a>
 
-        <a href="project3.html" class="project-card fade-in stagger-3">
-          <img src="images/project3.jpeg" alt="Pool RTD Thermometer">
+        <a href="project3.html" class="project-card fade-in stagger-3" data-tags="electronics">
+          <img loading="lazy" src="images/project3.jpeg" alt="Pool RTD Thermometer">
           <div class="card-body">
             <h3>Pool RTD Thermometer</h3>
             <p>Precise Waterproof Thermometer</p>
+            <div class="card-tags"><span>Electronics</span></div>
           </div>
         </a>
 
-        <a href="project4.html" class="project-card fade-in stagger-4">
-          <img src="images/project4.jpg" alt="Mini Arcade">
+        <a href="project4.html" class="project-card fade-in stagger-4" data-tags="electronics">
+          <img loading="lazy" src="images/project4.jpg" alt="Mini Arcade">
           <div class="card-body">
             <h3>Mini Arcade</h3>
             <p>RPI Powered Classic Emulator</p>
+            <div class="card-tags"><span>Electronics</span></div>
           </div>
         </a>
 
-        <a href="project5.html" class="project-card fade-in stagger-5">
-          <img src="images/project5.png" alt="Watch Bezel Remover">
+        <a href="project5.html" class="project-card fade-in stagger-5" data-tags="3d-print">
+          <img loading="lazy" src="images/project5.png" alt="Watch Bezel Remover">
           <div class="card-body">
             <h3>Watch Bezel Remover</h3>
             <p>Simple Tool to Remove Watch Bezels</p>
+            <div class="card-tags"><span>3D Print</span></div>
           </div>
         </a>
 
-        <a href="project6.html" class="project-card fade-in stagger-6">
-          <img src="images/project6.jpg" alt="ws2812b Pace Clock">
+        <a href="project6.html" class="project-card fade-in stagger-6" data-tags="electronics swimming">
+          <img loading="lazy" src="images/project6.jpg" alt="ws2812b Pace Clock">
           <div class="card-body">
             <h3>ws2812b Pace Clock</h3>
             <p>Pace Clock With Real Time Clock</p>
+            <div class="card-tags"><span>Electronics</span><span>Swimming</span></div>
           </div>
         </a>
 
-        <a href="project7.html" class="project-card fade-in stagger-1">
+        <a href="project7.html" class="project-card fade-in stagger-1" data-tags="3d-print">
           <img loading="lazy" src="images/project7.jpg" alt="Car Battery Jumper">
           <div class="card-body">
             <h3>Car Battery Jumper</h3>
             <p>Battery to Jump Cars & Power Things</p>
+            <div class="card-tags"><span>3D Print</span></div>
           </div>
         </a>
 
-        <a href="project8.html" class="project-card fade-in stagger-2">
+        <a href="project8.html" class="project-card fade-in stagger-2" data-tags="cnc">
           <img loading="lazy" src="images/project8.jpg" alt="Knife Scale">
           <div class="card-body">
             <h3>Knife Scale</h3>
             <p>Custom Knife Scale for Pilar</p>
+            <div class="card-tags"><span>CNC</span></div>
           </div>
         </a>
 
-        <a href="project9.html" class="project-card fade-in stagger-3">
+        <a href="project9.html" class="project-card fade-in stagger-3" data-tags="electronics">
           <img loading="lazy" src="images/project9.jpg" alt="Rugged Portable Charger">
           <div class="card-body">
             <h3>Rugged Portable Charger</h3>
             <p>Rugged Solar Portable Charger</p>
+            <div class="card-tags"><span>Electronics</span></div>
           </div>
         </a>
 
-        <a href="project10.html" class="project-card fade-in stagger-4">
+        <a href="project10.html" class="project-card fade-in stagger-4" data-tags="electronics">
           <img loading="lazy" src="images/project10.jpg" alt="Bike Tail Light">
           <div class="card-body">
             <h3>Bike Tail Light</h3>
             <p>Blinking Light for Safety</p>
+            <div class="card-tags"><span>Electronics</span></div>
           </div>
         </a>
 
-        <a href="project11.html" class="project-card fade-in stagger-5">
+        <a href="project11.html" class="project-card fade-in stagger-5" data-tags="3d-print">
           <img loading="lazy" src="images/project11.jpg" alt="Screwdriver Handle">
           <div class="card-body">
             <h3>Screwdriver Handle</h3>
             <p>Custom Screwdriver Handle</p>
+            <div class="card-tags"><span>3D Print</span></div>
           </div>
         </a>
 
-        <a href="project12.html" class="project-card fade-in stagger-6">
+        <a href="project12.html" class="project-card fade-in stagger-6" data-tags="electronics">
           <img loading="lazy" src="images/project12.jpg" alt="Cold Brew v2">
           <div class="card-body">
             <h3>Cold Brew v2</h3>
             <p>New Way of Making Cold Brew</p>
+            <div class="card-tags"><span>Electronics</span></div>
           </div>
         </a>
 
@@ -149,7 +175,14 @@
   </main>
 
   <footer>
-    <div class="inner">&copy; Alec Hudson</div>
+    <div class="inner">
+      <div class="footer-links">
+        <a href="https://github.com/alechudson" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#contact">Contact</a>
+        <!-- add LinkedIn / email links here -->
+      </div>
+      <p>&copy; Alec Hudson</p>
+    </div>
   </footer>
 
   <script src="main.js" defer></script>
