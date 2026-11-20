@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/jetbrains-mono/jetbrains-mono.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/space-grotesk/space-grotesk-700.woff2">
+  <meta name="description" content="Project by Alec Hudson — Digital Magic 8 Ball">
+  <meta property="og:title" content="Alec Hudson | Digital Magic 8 Ball">
+  <meta property="og:description" content="Project by Alec Hudson — Digital Magic 8 Ball">
+  <meta property="og:type" content="website">
+  <title>Alec Hudson | Digital Magic 8 Ball</title>
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header>
+    <nav>
+      <div class="inner">
+        <a href="index.html" class="logo">Alec Hudson</a>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+      <div class="fade-in">
+        <a href="projects.html" class="back-link">&larr; Back to Projects</a>
+        <h1>Digital Magic 8 Ball</h1>
+      </div>
+
+      <div class="fade-in">
+        <img class="screen-frame" src="images/magic8ball-idle.gif" data-still="images/magic8ball-idle.png" alt="Idle screen, a wireframe die with an 8 and the words ASK ME" width="240" height="240">
+      </div>
+
+      <div class="fade-in">
+        <h2>About This Project</h2>
+        <p>A Halloween costume prop. The shell is a 100 mm 3D printed sphere, with a round GC9A01 behind a 30 mm crystal. A Seeed XIAO ESP32-C6 and a LIS2DH12 accelerometer sit inside. Shake the sphere and it shows an answer.</p>
+        <p>There is no Wi-Fi, no Bluetooth, no app, and no speaker. A recessed latching button is the power switch. The ball holds 221 answers, including the 20 classic lines.</p>
+        <p>The pictures are the round display you see through the crystal.</p>
+        <dl class="build-specs">
+          <dt>Shell</dt>
+          <dd>100 mm 3D printed sphere</dd>
+          <dt>Display</dt>
+          <dd>GC9A01, 240 by 240, behind a 30 mm crystal</dd>
+          <dt>Board</dt>
+          <dd>Seeed XIAO ESP32-C6</dd>
+          <dt>Motion</dt>
+          <dd>LIS2DH12 accelerometer, shake to answer</dd>
+        </dl>
+      </div>
+
+      <figure class="fade-in">
+        <img class="screen-frame" src="images/magic8ball-yes.png" alt="Answer screen, a wireframe die with the word YES" width="480" height="480" loading="lazy">
+        <figcaption>A classic answer after the shake.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="footer-links">
+        <a href="https://github.com/alechudson" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p>&copy; Alec Hudson</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+
+</body>
+</html>

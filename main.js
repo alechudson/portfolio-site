@@ -95,3 +95,9 @@ if (filterBtns.length && projectCards.length) {
     });
   });
 }
+
+if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('img[data-still]').forEach(img => {
+    img.src = img.dataset.still;
+  });
+}

@@ -324,7 +324,8 @@ Projects Grid
 .project-card a { color: inherit; }
 .project-card a:hover { color: inherit; }
 
-.project-card.card-led::before { z-index: 2; }
+.project-card.card-led::before,
+.project-card.card-orb::before { z-index: 2; }
 
 .project-card.card-led::before {
   background: linear-gradient(90deg, #ff5a6a, #ffc14d, #f2f26b, #3dffc5, #4db8ff, #b388ff);
@@ -339,6 +340,33 @@ Projects Grid
 
 .project-card.card-led:hover::before,
 .project-card.card-led:focus-visible::before { opacity: 1; }
+
+.project-card.card-orb {
+  background: radial-gradient(circle at 50% 18%, #1a1c24 0%, #101014 46%, #0c0c0e 100%);
+  border-color: #1c1e26;
+}
+
+.project-card.card-orb img {
+  object-fit: contain;
+  object-position: center;
+  background: #000;
+  border-bottom-color: #161616;
+}
+
+.project-card.card-orb::before {
+  background: linear-gradient(90deg, transparent, rgba(210, 220, 255, 0.9), transparent);
+  opacity: 0.4;
+  transform: scaleX(1);
+}
+
+.project-card.card-orb:hover,
+.project-card.card-orb:focus-visible {
+  border-color: #34384a;
+  box-shadow: 0 0 26px rgba(180, 196, 255, 0.16), 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.project-card.card-orb:hover::before,
+.project-card.card-orb:focus-visible::before { opacity: 1; }
 
 /*====================
 Project Detail
@@ -392,6 +420,13 @@ Project Detail
 
 .project-detail figure img { margin: 0; }
 
+.project-detail img.screen-frame {
+  width: min(100%, 280px);
+  height: auto;
+  margin: 16px auto;
+  display: block;
+  background: #000;
+}
 
 .project-detail img,
 .project-detail video {
