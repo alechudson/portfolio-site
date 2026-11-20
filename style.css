@@ -324,6 +324,22 @@ Projects Grid
 .project-card a { color: inherit; }
 .project-card a:hover { color: inherit; }
 
+.project-card.card-led::before { z-index: 2; }
+
+.project-card.card-led::before {
+  background: linear-gradient(90deg, #ff5a6a, #ffc14d, #f2f26b, #3dffc5, #4db8ff, #b388ff);
+  opacity: 0.55;
+  transform: scaleX(1);
+}
+
+.project-card.card-led:hover,
+.project-card.card-led:focus-visible {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35), 0 0 22px rgba(255, 90, 140, 0.16);
+}
+
+.project-card.card-led:hover::before,
+.project-card.card-led:focus-visible::before { opacity: 1; }
+
 /*====================
 Project Detail
 ====================*/
@@ -353,6 +369,29 @@ Project Detail
 .project-detail p {
   color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px;
 }
+
+.build-specs {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 8px 16px;
+  margin: 4px 0 8px;
+  font-size: 0.85rem;
+}
+
+.build-specs dt { color: var(--text-secondary); }
+.build-specs dd { margin: 0; color: var(--text); }
+
+.project-detail figure { margin: 20px 0; }
+
+.project-detail figcaption {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.project-detail figure img { margin: 0; }
+
 
 .project-detail img,
 .project-detail video {
