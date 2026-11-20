@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/jetbrains-mono/jetbrains-mono.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/space-grotesk/space-grotesk-700.woff2">
+  <meta name="description" content="Project by Alec Hudson — LED Vial Gen 2">
+  <meta property="og:title" content="Alec Hudson | LED Vial Gen 2">
+  <meta property="og:description" content="Project by Alec Hudson — LED Vial Gen 2">
+  <meta property="og:type" content="website">
+  <title>Alec Hudson | LED Vial Gen 2</title>
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header>
+    <nav>
+      <div class="inner">
+        <a href="index.html" class="logo">Alec Hudson</a>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+      <div class="fade-in">
+        <a href="projects.html" class="back-link">&larr; Back to Projects</a>
+        <h1>LED Vial Gen 2</h1>
+      </div>
+
+      <div class="render-real fade-in">
+        <figure>
+          <img src="images/led-vial-tube-rainbow.png" alt="Cylinder of LEDs with a rainbow band wrapped around seven columns">
+          <figcaption>Render of the rainbow wrap.</figcaption>
+        </figure>
+        <figure>
+          <video data-clip muted playsinline loop preload="metadata" poster="images/led-vial-poster.jpg" width="540" height="960">
+            <source src="images/led-vial-body.mp4" type="video/mp4">
+          </video>
+          <figcaption>The printed shell on the bench.</figcaption>
+        </figure>
+      </div>
+
+      <div class="fade-in">
+        <h2>About This Project</h2>
+        <p>A cylindrical lantern made from 420 WS2812B LEDs. Thirty vertical strips of 14 run serpentine around a 3D printed ring. A Seeed XIAO ESP32-C6 drives the chain.</p>
+        <p>One button cycles a rainbow wrap, a rising chase, and a calibration pattern. The last choice is saved in NVS.</p>
+        <p>The LEDs use a separate 5 V 10 A supply, with power injected along the tube. The firmware caps the draw at 8 A and never lights more than 105 LEDs at once.</p>
+        <dl class="build-specs">
+          <dt>Board</dt>
+          <dd>Seeed XIAO ESP32-C6</dd>
+          <dt>LEDs</dt>
+          <dd>420 WS2812B, 30 strips of 14</dd>
+          <dt>Power</dt>
+          <dd>5 V 10 A supply, firmware cap 8 A</dd>
+          <dt>Max lit</dt>
+          <dd>105 LEDs at once</dd>
+        </dl>
+      </div>
+
+      <figure class="fade-in">
+        <img src="images/led-vial-effects-preview.png" alt="Unrolled grid of the rainbow wrap, rising chase, and calibration effects" loading="lazy">
+        <figcaption>Rainbow wrap, rising chase, and calibration. Each frame stays under the 105 LED cap.</figcaption>
+      </figure>
+
+      <figure class="fade-in">
+        <img src="images/led-vial-tube-3d.png" alt="Calibration colors on the vial, red and green columns with colored corners" loading="lazy">
+        <figcaption>Calibration on the vial. Column 0 is red, column 1 is green, and the bottom corners mark the seam.</figcaption>
+      </figure>
+
+      <figure class="fade-in">
+        <img src="images/led-vial-led-index-map.png" alt="Unrolled index map of 420 LEDs, odd columns running up and even columns running down" loading="lazy">
+        <figcaption>Serpentine index map. Odd columns run up. Even columns run down. Index 0 is the bottom of column 0.</figcaption>
+      </figure>
+
+      <figure class="fade-in">
+        <img src="images/led-vial-wiring-diagram.png" alt="Wiring from the XIAO ESP32-C6 data pin through 330 ohms to the LED chain, with a separate 5 V supply" loading="lazy">
+        <figcaption>Data leaves D10 through 330 ohms. LED power is a separate 5 V rail, not the XIAO pin.</figcaption>
+      </figure>
+
+      <figure class="fade-in">
+        <img src="images/led-vial-power-injection.png" alt="Top view and unrolled strips showing 5 V injection at columns 0, 6, 12, 18, and 24" loading="lazy">
+        <figcaption>5 V and ground injected at columns 0, 6, 12, 18, and 24.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="footer-links">
+        <a href="https://github.com/alechudson" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p>&copy; Alec Hudson</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+
+</body>
+</html>
